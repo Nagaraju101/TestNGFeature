@@ -18,9 +18,8 @@ public class ParameterTest
 {
     WebDriver driver;
 
-    @Test
-    @Parameters(
-    { "browser", "url", "emailId", "password" })
+    @Test(enabled=true)
+    @Parameters({ "browser", "url", "emailId", "password" })
     public void yahooLoginTest(String browser, String url, String emailId, String password)
     {
         if (browser.equalsIgnoreCase("chrome"))
